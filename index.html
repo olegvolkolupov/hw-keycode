@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="theme--dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>JavaScript Event KeyCodes</title>
+  </head>
+  <body>
+    <div class="display">
+      <table class="table hide">
+        <thead>
+          <tr>
+            <th>Key Code</th>
+            <th>Key</th>
+          </tr>
+        </thead>
+        <tbody class="table__body"></tbody>
+      </table>
+
+      <div class="wrap" aria-live="polite" aria-atomic="true">
+        <p class="keycode--display"></p>
+        <p class="text--display">
+          Press any key to get the JavaScript event keycode
+        </p>
+
+        <div class="cards hide">
+          <div class="card item-key">
+            <div class="card-header">event.key</div>
+            <div class="card-main">
+              <div class="main-description">key</div>
+            </div>
+          </div>
+          <div class="card item-which">
+            <div class="card-header">event.keyCode</div>
+            <div class="card-main">
+              <div class="main-description">which</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="buttons__toggle" id="button--table">Table</button>
+        <button class="buttons__toggle" id="button--theme">Light theme</button>
+      </div>
+    </div>
+
+    <div class="colors">
+      <p id="choose">Choose color</p>
+      <input type="button" value="Red" id="toggle-red" />
+      <input type="button" value="Blue" id="toggle-blue" />
+      <input type="button" value="Green" id="toggle-green" />
+    </div>
+
+    <script src="./scripts.js" type="module"></script>
+  </body>
+</html>
