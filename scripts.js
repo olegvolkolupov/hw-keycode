@@ -214,20 +214,20 @@ greenBtn.addEventListener('click',()=>{
 
 // variable for check if key pressed first time and
 //  hide initial text and show cards
-let firstTime = true;
+let isFirstTime = true;
 
 let bodyRef = document.querySelector('body');
 bodyRef.addEventListener('keydown', keyEvent);
 
 function keyEvent(event) {
-  if (firstTime) {
+  if (isFirstTime) {
     //   hide initial text
     document.querySelector('.text--display').classList.add('hide');
     // show cards
     let cards = document.querySelector('.cards');
     cards.classList.add('active');
     cards.classList.remove('hide');
-    firstTime = false;
+    isFirstTime = false;
   }
 
   //   main center section
@@ -239,11 +239,17 @@ function keyEvent(event) {
 }
 
 // -------table show/hide START----------
+let isTableCreated = false;
+
 let tableBtnRef = document.querySelector('#button--table');
 
 tableBtnRef.addEventListener('click', toggleTable);
 
 function toggleTable() {
+  if(!isTableCreated) {
+    createTable();
+    isTableCreated = true;
+  }
   let table = document.querySelector('.table');
 
   // Toggle main content and table
@@ -290,4 +296,4 @@ function toggleTheme() {
 // -------theme change END-----------
 
 // init
-createTable();
+// createTable();

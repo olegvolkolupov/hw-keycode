@@ -75,7 +75,6 @@ body {
   margin: 0 auto;
 }
 
-
 /* table with key codes descrition */
 .table {
   width: 50%;
@@ -147,7 +146,6 @@ p.text--display {
   font-size: 26px;
   box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
 }
-
 
 /* two cards at bottom*/
 .cards {
@@ -223,7 +221,6 @@ p.text--display {
   box-shadow: none;
 }
 
-
 /* three buttons for color-theme-changing */
 .colors {
   position: absolute;
@@ -241,20 +238,30 @@ p.text--display {
   font-size: 20px;
   text-align: center;
 }
-input[type=button] {
+input[type='button'] {
   padding: 0.3rem;
   font-size: 1rem;
   cursor: pointer;
+  color: #424242;
 }
 #toggle-red {
-  color: hsl(360, 50%, 55%);
-  border: 2px solid  hsl(360, 50%, 55%);
+  /* color: hsl(360, 50%, 55%); */
+  border: 2px solid hsl(360, 50%, 55%);
 }
 #toggle-green {
-  color: hsl(120, 50%, 55%);
-  border: 2px solid  hsl(120, 50%, 25%);
+  /* color: hsl(120, 50%, 55%); */
+  border: 2px solid hsl(120, 58%, 53%);
 }
 #toggle-blue {
+  /* color: hsl(240, 50%, 55%); */
+  border: 2px solid hsl(240, 50%, 55%);
+}
+#toggle-red:hover {
+  color: hsl(360, 50%, 55%);
+}
+#toggle-green:hover {
+  color: hsl(120, 50%, 55%);
+}
+#toggle-blue:hover {
   color: hsl(240, 50%, 55%);
-  border: 2px solid  hsl(240, 50%, 55%);
 }
