@@ -226,9 +226,7 @@ p.text--display {
   position: absolute;
   top: 15px;
   left: 15px;
-  font: bold 16px arial;
   border: 2px solid var(--button);
-  background: transparent;
   border-radius: 5px;
   padding: 5px 10px;
   transition: all 0.3s ease-out;
@@ -242,26 +240,25 @@ input[type='button'] {
   padding: 0.3rem;
   font-size: 1rem;
   cursor: pointer;
-  color: #424242;
 }
 #toggle-red {
-  /* color: hsl(360, 50%, 55%); */
-  border: 2px solid hsl(360, 50%, 55%);
-}
-#toggle-green {
-  /* color: hsl(120, 50%, 55%); */
-  border: 2px solid hsl(120, 58%, 53%);
-}
-#toggle-blue {
-  /* color: hsl(240, 50%, 55%); */
-  border: 2px solid hsl(240, 50%, 55%);
-}
-#toggle-red:hover {
   color: hsl(360, 50%, 55%);
 }
-#toggle-green:hover {
+#toggle-green {
   color: hsl(120, 50%, 55%);
 }
-#toggle-blue:hover {
+#toggle-blue {
   color: hsl(240, 50%, 55%);
+}
+#toggle-red:hover {
+  border-color: hsl(360, 50%, 55%);;
+  border-radius: 5px;
+}
+#toggle-green:hover {
+  border-color: hsl(120, 58%, 53%);
+  border-radius: 5px;
+}
+#toggle-blue:hover {
+  border-color: hsl(240, 50%, 55%);
+  border-radius: 5px;
 }
